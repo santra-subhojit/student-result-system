@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fetch Result</h1>
+        <label for="roll">Enter Roll Number:</label>
+        <input type="text" id="roll">
+        <button onclick="fetchPercentage()">Fetch Percentage</button>
+        <p id="percentageDisplay"></p>
+    </div>
+
+    <script>
+        function fetchPercentage() {
+            const rollNumber = document.getElementById('roll').value;
+            const storedPercentage = sessionStorage.getItem(rollNumber);
+
+            if (storedPercentage) {
+                document.getElementById('percentageDisplay').textContent = `Percentage for roll ${rollNumber}: ${storedPercentage}%`;
+            } else {
+                alert("No percentage found for the entered roll number.");
+            }
+        }
+    </script>
+</body>
+</html>
