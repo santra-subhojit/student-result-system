@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('result.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto; /* Added padding for better mobile view */
+    box-sizing: border-box;
+}
+
+.container {
+    color: #fff;
+    margin: 40px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for blur effect */
+    display: block;
+    padding: 20px;
+    border-radius: 20px; /* Changed shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px; /* Adjusted maximum width */
+    align-items: normal; /* Center align items horizontally */
+    animation: fadeIn 1s ease-in-out;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px); /* Apply blur effect */
+}
+
+button {
+    margin-left: 120px;
+    -ms-flex-align: center;
+    position: static;
+    padding: 10px 20px;
+    background-color: #007bff; /* Default background color */
+    color: #ffffff; /* Default text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+#message {
+    color: yellow;
+}
+
+h1 {
+    color: aqua;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Text border */
+}
+
+/* Added styles for paragraphs */
+p {
+    color: #fff; /* Changed text color to white */
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    input, button {
+        padding: 8px; /* Slightly reduced padding for better fit on small screens */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
