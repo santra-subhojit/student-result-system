@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+        <p id="name"></p>
+        <p id="class"></p>
+        <p id="roll"></p> <!-- Updated here -->
+        <p id="percentage"></p>
+        <p id="grade"></p>
+        <p id="message"></p>
+    </div>
+
+    <div class="container"><h1>Fetch Result</h1>
+    <button onclick="fetchAndRedirect()">Fetch Result</button></div>
+
+    <script>
+        function fetchAndRedirect() {
+            window.location.href = 'store.html';
+        }
+    </script>
+    <script>
+        // Updated script to retrieve Roll
+        document.getElementById('roll').textContent = 'Roll: ' + sessionStorage.getItem('roll');
+        document.getElementById('name').textContent = 'Name: ' + sessionStorage.getItem('name');
+        document.getElementById('class').textContent = 'Class: ' + sessionStorage.getItem('class');
+        document.getElementById('percentage').textContent = 'Percentage: ' + sessionStorage.getItem('percentage') + '%';
+        document.getElementById('grade').textContent = 'Grade: ' + sessionStorage.getItem('grade');
+        document.getElementById('message').textContent = sessionStorage.getItem('message');
+    </script>
+</body>
+</html>
+
