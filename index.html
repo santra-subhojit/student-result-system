@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form id="studentForm">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" required>
+            <label for="class">Roll:</label>
+            <input type="text" id="roll" name="roll" required>
+
+            <div class="subject">
+                <label for="subject1">Subject 1:</label>
+                <input type="text" id="subject1" name="subject1_name" placeholder="Subject Name" required>
+                <input type="number" id="subject1_marks" name="subject1_marks" placeholder="Marks" required max="100">
+                <label for="subject2">Subject 2:</label>
+                <input type="text" id="subject2" name="subject2_name" placeholder="Subject Name" required>
+                <input type="number" id="subject2_marks" name="subject2_marks" placeholder="Marks" requiredmax="100">
+                 <label for="subject3">Subject 3:</label>
+                <input type="text" id="subject3" name="subject3_name" placeholder="Subject Name" required>
+                <input type="number" id="subject3_marks" name="subject3_marks" placeholder="Marks" required max="100">
+                <label for="subject4">Subject 4:</label>
+                <input type="text" id="subject4" name="subject4_name" placeholder="Subject Name" required>
+                <input type="number" id="subject4_marks" name="subject4_marks" placeholder="Marks" required max="100">
+                <label for="subject5">Subject 5:</label>
+                <input type="text" id="subject5" name="subject5_name" placeholder="Subject Name" required>
+                <input type="number" id="subject5_marks" name="subject5_marks" placeholder="Marks" required max="100">
+            </div>
+        </form>
+    </div>
+    <span><button type="submit" form="studentForm"><b>Submit</b></button></span>
+    <script src="script.js"></script>
+</body>
+</html>
